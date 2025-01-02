@@ -8,5 +8,25 @@
 
 body {
   background: #0c0512;
-  padding-top: 85.45px;
+  margin-top: 85.45px;
+  background: linear-gradient(135deg, #061b3b, #290d42, #0f4146);
+  background-size: 1000% 300%;
+  animation: gradientFlow 18s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0f4146;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a676e;
 }

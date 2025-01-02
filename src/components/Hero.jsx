@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import girl1 from "../assets/imgs/girl1.jpg";
 import girl2 from "../assets/imgs/girl2.jpg";
 import girl3 from "../assets/imgs/girl3.jpg";
+import { DjConsole } from "./DjConsole";
 
 export const Hero = () => {
   const [girl, setGirl] = useState(girl1);
@@ -55,16 +56,19 @@ export const Hero = () => {
               highest potential for exponential growth
             </h6>
           </div>
-          {/* <div className="center__hero__floor">
-            <div className="hero__light__floor"></div>
-          </div> */}
         </div>
-        <div className="hero__right">
+        <div className="hero__right" data-aos="flip-right">
+          {/* <DjConsole /> */}
           <div className="girl__container">
             <div className="girl__card">
               <img src={girl} alt={girl} />
             </div>
           </div>
+        </div>
+      </div>
+      <div data-aos="fade-up">
+        <div className="center__hero__floor">
+          <div className="hero__light__floor"></div>
         </div>
       </div>
     </div>

@@ -1,0 +1,36 @@
+.fund-holdings-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  // background: linear-gradient(135deg, #5f9fff, #00a2ff);
+  color: #fff;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #5d184d;
+  }
+
+  .fund-holdings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .chart {
+      padding: 40px;
+      background: rgba(0, 162, 255, 0.1);
+      border-radius: 15px;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .details {
+      p {
+        font-size: 1.1rem;
+        margin: 5px 0;
+      }
+    }
+  }
+}
