@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/scss/RoadmapSection.scss";
+import "../assets/scss/roadmapSection.scss";
 
 const RoadmapSection = () => {
   return (
