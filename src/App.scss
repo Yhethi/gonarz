@@ -9,9 +9,21 @@
 body {
   background: #0c0512;
   margin-top: 85.45px;
-  background: linear-gradient(135deg, #061b3b, #290d42, #0f4146);
+  background: linear-gradient(90deg, #061b3b, #290d42, #0f4146);
   background-size: 1000% 300%;
   animation: gradientFlow 18s ease-in-out infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 ::-webkit-scrollbar {
