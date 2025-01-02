@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../assets/scss/partnersSection.scss";
+import { partnersRef } from "./utils/refs";
 
 const PartnersSection = () => {
   return (
-    <section className="partners-section">
+    <section ref={partnersRef} className="partners-section">
       <h1>Partners</h1>
       <div className="partners-grid">
         <div

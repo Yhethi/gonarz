@@ -1,20 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../assets/scss/tokenSection.scss";
 
 import logo from "../assets/imgs/logo.jpg";
+import { tokenRef } from "./utils/refs";
 
 const TokenSection = () => {
   return (
-    <section className="token-section">
+    <section ref={tokenRef} className="token-section">
       <div className="token-container">
-        {/* Representación principal del token */}
         <div className="token-image-wrapper">
           <img src={logo} alt="logo" className="token-image" />
         </div>
 
-        {/* Contenedores de información a un lado */}
         <div className="token-info">
-          {/* Título principal */}
           <div className="info-block">
             <h1 className="token-title">Exclusive Token</h1>
             <p className="token-description">
@@ -23,7 +21,6 @@ const TokenSection = () => {
             </p>
           </div>
 
-          {/* Estadísticas del token */}
           {/* <div className="info-block stats">
             <div>
               <h4>Price</h4>

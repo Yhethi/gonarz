@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../assets/scss/roadmapSection.scss";
+import { roadmapRef } from "./utils/refs";
 
 const RoadmapSection = () => {
   return (
-    <section className="roadmap-section">
+    <section ref={roadmapRef} className="roadmap-section">
       <h1>Roadmap</h1>
       <div className="roadmap-content">
         <div className="roadmap-item" data-aos="zoom-out">

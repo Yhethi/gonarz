@@ -11,6 +11,7 @@ import girl1 from "../assets/imgs/girl1.jpg";
 import girl2 from "../assets/imgs/girl2.jpg";
 import girl3 from "../assets/imgs/girl3.jpg";
 import { DjConsole } from "./DjConsole";
+import { heroRef } from "./utils/refs";
 
 export const Hero = () => {
   const [girl, setGirl] = useState(girl1);
@@ -42,7 +43,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" className="global__hero">
+    <div ref={heroRef} data-aos="fade-up" className="global__hero">
       <SquaresAnimation />
       <div className="hero__content">
         <div className="hero__left">
