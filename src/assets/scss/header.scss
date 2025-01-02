@@ -109,9 +109,14 @@
   .global__header {
     padding: 10px 6% 30px 6% !important;
     .header__menus {
-      display: flex;
+      // display: flex;
+      // flex-direction: column;
+      // text-align: center;
+      display: grid;
       flex-direction: column;
       text-align: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       gap: 10px;
       .menu {
         position: relative;

@@ -10,6 +10,7 @@
   top: 15%;
   padding: 20px;
   z-index: 100;
+  animation: bounce2 4s linear infinite;
   // scale: 0.8;
   .consoleDjImg {
     position: absolute;
@@ -87,7 +88,6 @@
     top: auto;
     bottom: -30px !important;
     scale: 0.7;
-    animation: bounce2 4s linear infinite;
   }
 }
 @keyframes bounce {

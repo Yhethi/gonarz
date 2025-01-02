@@ -24,7 +24,7 @@ function App() {
       <RoadmapSection />
       <PartnersSection />
       <TokenSection />
-      <FundHoldingsSection />
+      {/* <FundHoldingsSection /> */}
       <Luciernagas />
     </>
   );

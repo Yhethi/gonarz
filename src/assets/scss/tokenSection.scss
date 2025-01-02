@@ -35,13 +35,11 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-
       .info-block {
         background: #0c3474;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-
         &.stats {
           display: flex;
           justify-content: space-between;
@@ -61,7 +59,7 @@
         &.actions {
           display: flex;
           gap: 10px;
-
+          width: 100%;
           .action-button {
             flex: 1;
             padding: 10px 15px;
@@ -105,7 +103,7 @@
   @media (max-width: 768px) {
     .token-container {
       flex-direction: column;
-
+      padding-bottom: 100px;
       .token-info {
         align-items: center;
         text-align: center;
