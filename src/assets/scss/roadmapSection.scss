@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 300px;
   // background: linear-gradient(135deg, #00a2ff, #5f9fff);
   color: #fff;
 
@@ -16,16 +16,20 @@
 
   .roadmap-content {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    // flex-direction: column;
     gap: 20px;
 
     .roadmap-item {
+      width: 308px;
+      height: 308px;
       padding: 20px;
       background: #5d184d;
       border-radius: 15px;
       text-align: center;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-
+      
       h2 {
         font-size: 2rem;
         margin-bottom: 10px;
