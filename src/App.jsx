@@ -8,6 +8,7 @@ import FundHoldingsSection from "./components/FundHoldingsSection";
 import PartnersSection from "./components/PartnersSection";
 import { DjConsole } from "./components/DjConsole";
 import { Luciernagas } from "./components/utils/Luciernagas";
+import TokenSection from "./components/TokenSection";
 
 function App() {
   useEffect(() => {
@@ -19,11 +20,11 @@ function App() {
       <Header />
       <Hero />
       <DjConsole />
-
       <FeaturesSection />
       <RoadmapSection />
-      <FundHoldingsSection />
       <PartnersSection />
+      <TokenSection />
+      <FundHoldingsSection />
       <Luciernagas />
     </>
   );

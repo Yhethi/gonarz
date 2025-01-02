@@ -10,16 +10,16 @@ export const Header = () => {
       </div>
       <div className="header__menus">
         <div className="menu">
-          <a href="#">Index</a>
+          <a href="#">ROADMAP</a>
         </div>
         <div className="menu">
-          <a href="#">roadmap</a>
+          <a href="#">PARTNERS</a>
         </div>
         <div className="menu">
-          <a href="#">fund holdings distribution</a>
+          <a href="#">TOKEN</a>
         </div>
         <div className="menu">
-          <a href="#">partners</a>
+          <a href="#">DISTRIBUTION</a>
         </div>
       </div>
     </div>
