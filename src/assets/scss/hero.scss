@@ -2,11 +2,13 @@
   width: 100vw;
   height: auto;
   //   background: red;
-  pointer-events: none;
+  //   pointer-events: none;
+  z-index: 2;
   .hero__content {
     position: absolute;
     width: 100%;
-    height: 430px;
+    transform: translateY(430px);
+    // height: 430px;
     // background: blue;
     top: 0;
     left: 0;
