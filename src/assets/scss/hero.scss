@@ -1,0 +1,52 @@
+.global__hero {
+  width: 100vw;
+  height: auto;
+  //   background: red;
+  pointer-events: none;
+  .hero__content {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+    // background: blue;
+    top: 0;
+    left: 0;
+    .hero__left {
+      position: relative;
+      width: 50%;
+      height: 100%;
+      //   background: green;
+      transition: 0.3s;
+      .center__hero__floor {
+        width: 100%;
+        position: absolute;
+        bottom: -80px;
+        display: flex;
+        justify-content: center;
+        padding: 0 10%;
+        .hero__light__floor {
+          width: 100%;
+          height: 70px;
+          background: linear-gradient(to left, #061b3b, #5c9dff, #061b3b);
+          border-radius: 20px;
+          filter: blur(15px) opacity(0.8);
+          animation: floating 5s linear infinite;
+        }
+        @keyframes floating {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(30px);
+          }
+        }
+      }
+    }
+    @media (max-width: 640px) {
+      .hero__left {
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+}
