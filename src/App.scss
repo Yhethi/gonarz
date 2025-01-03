@@ -44,3 +44,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #1a676e;
 }
+
+.refPosition {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+}

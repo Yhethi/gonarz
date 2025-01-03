@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "../assets/scss/header.scss";
 import logo from "../assets/imgs/logo.jpg";
-import RoadmapSection from "./RoadmapSection";
 import { heroRef, partnersRef, roadmapRef, tokenRef } from "./utils/refs";
 
 export const Header = () => {

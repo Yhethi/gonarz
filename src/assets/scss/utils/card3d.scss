@@ -29,21 +29,33 @@
   position: relative;
   width: 100%;
   height: 100%;
+  .img__card {
+    width: 100%;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 85%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 85%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }
 
 #prompt {
   width: 100%;
   height: 100%;
-  display: grid;
-  place-content: center;
+  bottom: 0px;
   z-index: 20;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 2px;
   transition: 300ms ease-in-out;
-  position: absolute;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -78,23 +90,24 @@
 
 .subtitle {
   position: absolute;
-  bottom: 100px;
+  bottom: 60px;
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-size: 12px;
   letter-spacing: 2px;
   transform: translateY(30px);
   color: rgba(255, 255, 255, 0.6);
+  padding-inline: 10px;
 }
 
 .highlight {
   color: #00ffaa;
-  margin-left: 5px;
   background: linear-gradient(90deg, #5c67ff, #ad51ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .glowing-elements {
@@ -141,7 +154,7 @@
   background: #00ffaa;
   border-radius: 50%;
   opacity: 1;
-  animation: particleFloat 2s infinite;
+  animation: particleFloat 10s infinite;
   transition: opacity 0.3s ease;
 }
 
@@ -156,7 +169,7 @@
 }
 
 .tracker:hover ~ #card .card-particles span {
-  animation: particleFloat 2s infinite;
+  animation: particleFloat 10s infinite;
 }
 
 @keyframes particleFloat {
