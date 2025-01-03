@@ -12,6 +12,7 @@ body {
   background: linear-gradient(90deg, #061b3b, #290d42, #0f4146);
   background-size: 1000% 300%;
   animation: gradientFlow 18s ease-in-out infinite;
+  overflow-x: hidden;
 }
 
 @keyframes gradientFlow {
@@ -29,6 +30,7 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar-track {

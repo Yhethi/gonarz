@@ -25,6 +25,14 @@ const FeaturesSection = () => {
         <h2>Feature Three</h2>
         <p>Explain what makes your offering unique.</p>
       </div>
+      <div className="features__item">
+        <h2>Feature Four</h2>
+        <p>Explain what makes your offering unique.</p>
+      </div>
+      <div className="features__item">
+        <h2>Feature Five</h2>
+        <p>Explain what makes your offering unique.</p>
+      </div>
     </section>
   );
 };

@@ -48,18 +48,20 @@ export const Hero = () => {
       <div className="hero__content">
         <div className="hero__left">
           <div className="hero__text">
-            <h1>Discover the Future of Meme Investments</h1>
+            <h1>Discover the Future of Meme Investments.</h1>
             <h4>
               A Meme Fund built to thrive on high-volatility opportunities.
             </h4>
             <h6>
               At Meme Economy Fund, we focus on low to mid-cap assets with the
-              highest potential for exponential growth
+              highest potential for exponential growth.
             </h6>
           </div>
         </div>
+        {/* <div className="hero__center">
+          <DjConsole />
+        </div> */}
         <div className="hero__right" data-aos="flip-right">
-          {/* <DjConsole /> */}
           <div className="girl__container">
             <div className="girl__card">
               <img src={girl} alt={girl} />

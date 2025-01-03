@@ -4,12 +4,14 @@
   z-index: 2;
   height: 580px;
   margin-top: 85.45px;
+
   .hero__content {
     position: absolute;
     display: flex;
     width: 100vw;
     top: 0;
     left: 0;
+    overflow: hidden;
     .hero__left {
       position: relative;
       width: 50vw;
@@ -90,7 +92,6 @@
         display: flex;
         justify-content: end;
         perspective: 1000px;
-
         .girl__card {
           background: #061b3b;
           width: 400px;
@@ -167,7 +168,7 @@
 }
 @media (max-width: 800px) {
   .global__hero {
-    height: 700px;
+    height: 600px;
   }
   .center__hero__floor {
     width: 100%;
@@ -175,7 +176,7 @@
     display: flex;
     padding: 0 5%;
     bottom: 0;
-    transform: translateY(270px) !important;
+    transform: translateY(160px) !important;
   }
   .hero__content {
     position: absolute;
@@ -187,11 +188,19 @@
       display: flex;
       justify-content: center;
       padding: 20px 0% 0 0% !important;
+      .girl__container {
+        height: 300px !important;
+        justify-content: center;
+        .girl__card {
+          width: 300px !important;
+        }
+      }
     }
     .hero__left {
       position: relative;
       width: 100vw !important;
       text-align: center;
+      padding-top: 20px;
 
       .hero__text {
         display: flex;
@@ -199,7 +208,7 @@
         flex-direction: column;
         align-items: center;
         padding: 80px 10px 0 10px;
-        font-size: 26px;
+        font-size: 24px;
         h1 {
           width: 100%;
         }
