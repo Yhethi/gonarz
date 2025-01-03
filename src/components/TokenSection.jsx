@@ -7,14 +7,13 @@ import { tokenRef } from "./utils/refs";
 const TokenSection = () => {
   return (
     <section
-      ref={tokenRef}
       className="token-section"
       data-aos-offset="50"
       data-aos="fade-down"
       data-aos-easing="linear"
-      data-aos-duration="300"
+      data-aos-duration="100"
     >
-      <div className="token-container">
+      <div className="token-container" ref={tokenRef}>
         <div className="token-image-wrapper">
           <img src={logo} alt="logo" className="token-image" />
         </div>
